@@ -14,7 +14,7 @@ export default function Stats() {
 
   const getStocksData = (stock) => {
     return axios
-      .get(`${BASE_URL}?symbol=${stock}&%token=${KEY_URL}`)
+      .get(`${BASE_URL}${stock}${KEY_URL}`)
       .catch((error) => {
         console.error("Error", error.message)
       });
