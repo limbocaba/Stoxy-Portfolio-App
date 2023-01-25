@@ -7,7 +7,7 @@ export default function Header() {
     <div className='header-wrapper'>
       {/* logo */}
       <div className=' header-logo'>
-      <GiRobinHoodHat className='logo'/>
+        <GiRobinHoodHat className='logo' />
       </div>
       {/* search */}
       <div className='header-search'>
