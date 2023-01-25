@@ -7,6 +7,7 @@ import { BiMovie, BiBuildingHouse } from "react-icons/bi";
 import { FaCannabis, FaBitcoin } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import { TbVaccine } from "react-icons/tb";
+import { GiNuclearBomb, GiOilDrum } from 'react-icons/gi'
 
 export default function Newsfeed() {
   const popularTopics = [
@@ -78,6 +79,14 @@ export default function Newsfeed() {
               <TbVaccine className="popular-card-icon" />
               <p>Pharma</p>
             </div>
+              <div className="popular-card">
+                <GiNuclearBomb className="popular-card-icon" />
+                <p>Military</p>
+                </div>
+              <div className="popular-card">
+                <GiOilDrum className="popular-card-icon" />
+                <p>Oil</p>
+              </div>
           </div>
         </div>
       </div>
