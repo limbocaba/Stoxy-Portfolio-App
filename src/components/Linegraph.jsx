@@ -41,14 +41,14 @@ export default function Linegraph() {
   }, [])
 
   const data = {
-    labels: ['', '', '', '', '' , '', '', '', '', '', '', '', ''],
+    labels: ['', '', '', '', '' , '', '', '', '', '', '', '', '', '', '', '', '', '' , '', '', '', '', '', '', '', ''],
     datasets: [{
       label: 'Your Stock Portfolio',
-      data: [4.2, 4.7, 3.4, 5.8, 3, 4.2, 4.3, 4.3, 3.2, 5.3, 5.7, 4.9, 5.3],
+      data: [4.2, 4.7, 3.4, 5.8, 3, 4.2, 4.3, 4.3, 3.2, 5.3, 5.7, 4.9, 5.3, 4.1, 4.9, 3.4, 5.2, 5.1, 5, 5.2, 5.8, 4.9, 5, 5, 5],
       backgroundColor: 'rgba(0, 0, 0, 0)',
       borderColor: '#5AC53B',
       fill: true,
-      tension: 0.3,
+      tension: 0,
       pointBorderColor: 'rgba(0, 0, 0, 0)',
       // pointBackgroundColor: 'rgba(0, 0, 0, 0)',
       // pointHoverBackgroundColor: '#5AC53B',
@@ -65,7 +65,8 @@ export default function Linegraph() {
     scales: {
       y: {
         min: 3,
-        max:6
+        max: 6,
+        display: false
       }
       }
     }
