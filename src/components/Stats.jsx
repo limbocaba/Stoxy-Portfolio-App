@@ -31,7 +31,6 @@ export default function Stats() {
           })
         )})
         Promise.all(promises).then(() => {
-        console.log(tempData)
           setmyStocks(tempData);
         })
     })
@@ -73,14 +72,23 @@ export default function Stats() {
     <div className='stats'>
       <div className='stats-container'>
         <div className="stats-header">
-          <p>Stocks</p>
+          <p>My Stocks</p>
         </div>
         <div className="stats-content">
           <div className="stats-rows">
             {/* for our owned stocks */}
+            {myStocks.map((stock) => (
+              <StatsRow
+                key={stock.data.ticker}
+                name={stock.data.ticker}
+                openPrice={stock.info.o}
+                shares={stock.data.shares}
+                price={stock.info.c}
+              />
+            ))}
           </div>
         </div>
-        <div className="stats-header">
+        <div className="stats-header stats-list">
           <p>Lists</p>
         </div>
         <div className="stats-content">

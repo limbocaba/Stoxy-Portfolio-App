@@ -10,7 +10,7 @@ export default function StatsRow(props) {
     <div className='row'>
       <div className="row-intro">
         <h1>{props.name}</h1>
-        <p>{props.shares && (props.shares + "shares")}</p>
+        <p>{props.shares && (props.shares + " shares")}</p>
       </div>
       <div className="row-chart">
         <img src={StockChart} height={16} /> 
