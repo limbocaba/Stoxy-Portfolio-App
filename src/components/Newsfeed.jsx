@@ -12,7 +12,7 @@ export default function Newsfeed() {
             <p>$37.83 (+0.08%) Today</p>
           </div>
           <div className=' newsfeed-chart'>
-            {/* <Linegraph /> */}
+            <Linegraph />
           </div>
         </div>
 
