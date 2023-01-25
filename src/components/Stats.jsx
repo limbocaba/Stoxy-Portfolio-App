@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react'
 import "./Stats.css"
 import StatsRow from './StatsRow';
-import { firestore as db } from "../firebase.js"
+import { db } from "../firebase.js"
 
 const BASE_URL = "https://finnhub.io/api/v1/quote?symbol=";
 
@@ -46,6 +46,7 @@ export default function Stats() {
     let tempStocksData = []
     const stocksList = ["AAPL", "MSFT", "TSLA", "FB", "BABA", "UBER", "DIS", "SBUX"];
     let promises = [];
+    getMyStocks();
     stocksList.map((stock) => {
       promises.push(
         getStocksData(stock)
