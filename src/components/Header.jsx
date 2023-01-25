@@ -1,6 +1,5 @@
 import React from 'react'
 import { GiRobinHoodHat } from 'react-icons/gi'
-import { RxMagnifyingGlass } from 'react-icons/rx'
 import "./Header.css"
 
 export default function Header() {

@@ -16,7 +16,9 @@ function App() {
           <div className='newsfeed'>
             <Newsfeed />
           </div>
-          <div className=' stats'></div>
+          <div className='stats'>
+            <Stats />
+          </div>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import {
   Legend,
   Tooltip
 } from 'chart.js'
+  import "./Linegraph.css"
 
 ChartJS.register(
   LineElement,
@@ -66,8 +67,9 @@ export default function Linegraph() {
         min: 3,
         max:6
       }
+      }
     }
-    }
+    
 
   return (
     <div className='linegraph'>
