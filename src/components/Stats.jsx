@@ -16,20 +16,23 @@ export default function Stats() {
 
   const getMyStocks = () => {
     db
-      .collection('myStocks')
+    .collection('myStocks')
       .onSnapshot(snapshot => {
-        let promises = []
+        let promises = [];
         let tempData = []
         snapshot.docs.map((doc) => {
-          console.log(doc.data())
-          promises.push(getStocksData(doc.data().ticker))
-            .then(res => {
-              tempData.push({
-                id: doc.id,
-                data: doc.data(),
-                info: res.data
+          promises.push(getStocksData(doc.data().ticker)
+          .then(res => {
+            tempData.push({
+              id: doc.id,
+              data: doc.data(),
+              info: res.data
             })
           })
+        )})
+        Promise.all(promises).then(() => {
+        console.log(tempData)
+          setmyStocks(tempData);
         })
     })
   }
