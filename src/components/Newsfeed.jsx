@@ -33,7 +33,7 @@ export default function Newsfeed() {
         </div>
         <div className="newsfeed-market-section">
           <div className="newsfeed-market-box">
-            <p>Markets Closed</p>
+            <p>No News Available</p>
             <h1>Check back here for updates on the market!</h1>
           </div>
         </div>
