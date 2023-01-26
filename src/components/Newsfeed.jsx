@@ -7,7 +7,10 @@ import { BiMovie, BiBuildingHouse } from "react-icons/bi";
 import { FaCannabis, FaBitcoin, FaEthereum } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import { TbVaccine } from "react-icons/tb";
-import { GiNuclearBomb, GiOilDrum } from 'react-icons/gi'
+import { GiNuclearBomb, GiOilDrum, GiVrHeadset } from 'react-icons/gi'
+import { DiApple} from 'react-icons/di'
+
+
 
 export default function Newsfeed() {
 
@@ -79,6 +82,14 @@ export default function Newsfeed() {
             <div className="popular-card">
                 <FaEthereum className="popular-card-icon" />
                 <p>Ethereum Family</p>
+            </div>
+            <div className="popular-card">
+                <GiVrHeadset className="popular-card-icon" />
+                <p>Virtual Reality</p>
+              </div>
+              <div className="popular-card">
+                <DiApple className="popular-card-icon" />
+                <p>FAANG</p>
               </div>
           </div>
         </div>
