@@ -4,23 +4,12 @@ import "./Newsfeed.css";
 import Timeline from "./Timeline";
 import { RiMacbookFill } from "react-icons/ri";
 import { BiMovie, BiBuildingHouse } from "react-icons/bi";
-import { FaCannabis, FaBitcoin } from "react-icons/fa";
+import { FaCannabis, FaBitcoin, FaEthereum } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import { TbVaccine } from "react-icons/tb";
 import { GiNuclearBomb, GiOilDrum } from 'react-icons/gi'
 
 export default function Newsfeed() {
-  const popularTopics = [
-    "Technology",
-    "Top Movies",
-    "Upcoming Earnings",
-    "Crypto",
-    "Cannabis",
-    "Healthcare Supplies",
-    "Index ETFs",
-    "China",
-    "Pharma",
-  ];
 
   return (
     <div className=" newsfeed">
@@ -28,7 +17,7 @@ export default function Newsfeed() {
         <div className="newsfeed-chart-section">
           <div className="newsfeed-portfolio">
             <h1>$121,596</h1>
-            <p>$37.83 (+0.08%) Today</p>
+            <p>$303.99 (+0.25%) Today</p>
           </div>
           <div className=" newsfeed-chart">
             <Linegraph />
@@ -47,7 +36,7 @@ export default function Newsfeed() {
         </div>
         <div className="newsfeed-popularlists-section">
           <div className="newsfeed-popularlists-intro">
-            <h1>Popular Lists</h1>
+            <h1>Hot Topics</h1>
             {/* <p>Show More</p> */}
           </div>
           <div className="popular-cards">
@@ -57,7 +46,7 @@ export default function Newsfeed() {
             </div>
             <div className="popular-card">
               <BiMovie className="popular-card-icon" />
-              <p>Top Movies</p>
+              <p>Hollywood</p>
             </div>
             <div className="popular-card">
               <FaCannabis className="popular-card-icon" />
@@ -86,6 +75,10 @@ export default function Newsfeed() {
               <div className="popular-card">
                 <GiOilDrum className="popular-card-icon" />
                 <p>Oil</p>
+            </div>
+            <div className="popular-card">
+                <FaEthereum className="popular-card-icon" />
+                <p>Ethereum Family</p>
               </div>
           </div>
         </div>

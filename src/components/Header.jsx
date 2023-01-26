@@ -20,7 +20,8 @@ export default function Header() {
         <a href='#' className='stock-item'>Free Stocks</a>
         <a href='#'>Portfolio</a>
         <a href='#'>Cash</a>
-        <a href='#'>Messages</a>
+        <a href='#'>Retirement</a>
+        <a href='#'>Notifications</a>
         <a href='#'>Account</a>
       </div>
     </div>

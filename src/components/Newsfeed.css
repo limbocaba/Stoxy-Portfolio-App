@@ -64,6 +64,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px 20px 0px;
+  border-bottom: 2px solid #31363A;
 }
 
 .newsfeed-popularlists-section {
@@ -87,9 +88,19 @@
 
 .popular-card:hover {
   transform: scale(1.05);
+  background-color: #31363a;
 }
 
 .popular-card-icon {
   margin: 0px 8px 0px 6px;
   position: relative;
+}
+
+.newsfeed-market-section:hover {
+  cursor: pointer;
+  background-color: #31363A;
+}
+
+.popular-cards {
+  padding-top: 20px;
 }
